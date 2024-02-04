@@ -1,0 +1,39 @@
+.container-fluid{
+    padding: 0;
+    background-color: #fddbdb;
+}
+.nav-item{
+    font-family: 'K2D', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.img-fluid{
+    height: 50px;
+    width: 50px;
+}
+.h2{
+    font-family: 'K2D', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    margin: 10px;
+}
+.background{
+    height: 80vh;
+    width: 98vw;
+    position: absolute;
+    top: 115px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #dcdbfd;
+}
+label{
+    font-family: 'K2D', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-set{
+    display: flex;
+    justify-content: space-around;
+}

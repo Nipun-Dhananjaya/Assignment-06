@@ -1,0 +1,54 @@
+.login{
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #DCDBFD;
+}
+.img-fluid{
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.text-center{
+    font-family: 'K2D', sans-serif;
+    color: #221ef0;
+}
+.form-floating{
+    border: 2px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.signup-btn{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.or-txt{
+    position: absolute;
+    top: 145px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.already-have-btn{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
