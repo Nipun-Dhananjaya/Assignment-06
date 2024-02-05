@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=K2D&family=Stylish&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/customer-styles.css">
+    <link rel="stylesheet" href="css/order-styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -53,30 +53,157 @@
     <form>
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="itm-name">Name :</label>
-                    <input type="text" class="form-control border border-danger" id="itm-name" placeholder="" class="input">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ord-id">Order ID :</label>
+                                <input type="text" class="form-control border border-danger" id="ord-id" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ord-date">Order Date :</label>
+                                <input type="date" class="form-control border border-danger" id="ord-date" placeholder="" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cust-id">Customer ID :</label>
+                                <div class="dropdown">
+                                <button id="cust-id" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Click Here To Select
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cust-name">Name :</label>
+                                <input type="text" class="form-control border border-danger" id="cust-name" placeholder="" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cust-add">Address :</label>
+                                <input type="text" class="form-control border border-danger" id="cust-add" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cust-cont">Contact :</label>
+                                <input type="text" class="form-control border border-danger" id="cust-cont" placeholder="" class="input">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="itm-code">Code :</label>
-                    <input type="text" class="form-control border border-danger" id="itm-code" placeholder="" class="input">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-code">Item Code :</label>
+                                <div class="dropdown">
+                                    <button id="itm-code" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Click Here To Select
+                                    </button>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-desc">Description :</label>
+                                <input type="text" class="form-control border border-danger" id="itm-desc" placeholder="" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-price">Price :</label>
+                                <input type="text" class="form-control border border-danger" id="itm-price" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-qty-on-hand">Quantity On Hand :</label>
+                                <input type="text" class="form-control border border-danger" id="itm-qty-on-hand" placeholder="" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-qty">Quantity :</label>
+                                <input type="text" class="form-control border border-danger" id="itm-qty" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger col-md-12 mt-4">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="itm-qty">Quantity :</label>
-                    <input type="text" class="form-control border border-danger" id="itm-qty" placeholder="" class="input">
+                <div class="container mt-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itm-qty">Cash :</label>
+                                <input type="text" class="form-control border border-danger" id="cash" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="h2 mt-3">Total :</p>
+                                <p class="h2 mt-3 text-primary-emphasis">0.00 /=</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="discount">Discount :</label>
+                                <div class="dropdown">
+                                    <button id="discount" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Click Here To Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="h2 mt-3">Subtotal :</p>
+                                <p class="h2 mt-3 text-danger">0.00 /=</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="balance">Balance :</label>
+                                <input type="text" class="form-control border border-danger" id="balance" placeholder="" class="input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success col-md-12 mt-4">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="itm-price">Price :</label>
-                    <input type="text" class="form-control border border-danger" id="itm-price" placeholder="" class="input">
-                </div>
+
             </div>
         </div>
     </form>
