@@ -1,4 +1,10 @@
-.login{
+.signup-window{
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 99vw;
+}
+.signup{
     height: 80vh;
     width: 30vw;
     position: absolute;
@@ -9,27 +15,18 @@
     margin: auto;
     background-color: #DCDBFD;
 }
-.img-fluid{
-    height: 125px;
-    width: 125px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
 .text-center{
     font-family: 'K2D', sans-serif;
     color: #221ef0;
 }
-.form-floating{
-    border: 2px solid red;
-    border-radius: 5px;
-    position: absolute;
+#text-float-three{
     top: 30px;
-    right: 0;
-    left: 0;
-    margin: auto;
+}
+#text-float-four{
+    top: 45px;
+}
+#text-float-five{
+    top: 60px;
 }
 .signup-btn{
     position: absolute;
@@ -38,7 +35,7 @@
     left: 0;
     margin: auto;
 }
-.or-txt{
+#or-two{
     position: absolute;
     top: 145px;
     right: 0;

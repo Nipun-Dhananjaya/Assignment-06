@@ -9,8 +9,8 @@
     margin: auto;
     background-color: #DCDBFD;
 }
-.img-fluid{
-    height: 125px;
+#lockImg{
+    height: 135px;
     width: 125px;
     position: absolute;
     top: 60px;
@@ -26,10 +26,15 @@
     border: 2px solid red;
     border-radius: 5px;
     position: absolute;
-    top: 180px;
     right: 0;
     left: 0;
     margin: auto;
+}
+#text-float-one{
+    top: 180px;
+}
+#text-float-two{
+    top: 190px;
 }
 .login-btn{
     position: absolute;
@@ -38,14 +43,14 @@
     left: 0;
     margin: auto;
 }
-.signup-btn{
+#signup-in-login{
     position: absolute;
     top: 215px;
     right: 0;
     left: 0;
     margin: auto;
 }
-.or-txt{
+#or-one{
     position: absolute;
     top: 165px;
     right: 0;

@@ -1,3 +1,21 @@
+#customer-window{
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    width: 99vw;
+}
+#store-window{
+    position: absolute;
+    top: 300vh;
+    height: 100vh;
+    width: 99vw;
+}
+#all-order-window{
+    position: absolute;
+    top: 500vh;
+    height: 100vh;
+    width: 99vw;
+}
 nav{
     z-index: 10000;
 }
@@ -10,7 +28,19 @@ nav{
     font-size: 24px;
     font-weight: bold;
 }
-.img-fluid{
+#customer-img{
+    height: 50px;
+    width: 50px;
+}
+#store-img{
+    height: 50px;
+    width: 50px;
+}
+#all-order-img{
+    height: 50px;
+    width: 50px;
+}
+.logo-img{
     height: 50px;
     width: 50px;
 }
@@ -20,7 +50,18 @@ nav{
     display: inline-block;
     margin: 10px;
 }
-.background{
+#customer-background{
+    height: 80vh;
+    width: 98vw;
+    position: absolute;
+    top: 115px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #dcdbfd;
+}
+#store-background{
     height: 80vh;
     width: 98vw;
     position: absolute;
