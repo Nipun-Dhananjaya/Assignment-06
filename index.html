@@ -37,9 +37,9 @@
             <label for="floatingPassword">Password</label>
         </div>
         <div class="container-md position-absolute top-50 start-50 translate-middle">
-            <button type="button" class="btn btn-primary col-9 login-btn" onclick="window.location.href='./customer.html'">Login</button>
+            <button type="button" class="btn btn-primary col-9 login-btn" id="login-btn">Login</button>
             <h1 id="or-one" class="text-center fs-1 fw-bold or-txt">Or</h1>
-            <button type="button" class="btn btn-danger col-9 signup-btn" id="signup-in-login" onclick="window.location.href='./signup.html'">Sign Up</button>
+            <button type="button" class="btn btn-danger col-9 signup-btn" id="signup-in-login">Sign Up</button>
         </div>
     </div>
 </div>
@@ -62,9 +62,9 @@
                 <label for="floatingPassword-2">Re Enter Password</label>
             </div>
             <div class="container-md position-absolute top-50 start-50 translate-middle">
-                <button type="button" class="btn btn-primary col-9 signup-btn">Sign Up</button>
+                <button type="button" class="btn btn-primary col-9 signup-btn" id="signup-btn">Sign Up</button>
                 <h1 id="or-two" class="text-center fs-1 fw-bold or-txt">Or</h1>
-                <button type="button" class="btn btn-danger col-9 already-have-btn" onclick="window.location.href='./index.html'">Already Have An Account</button>
+                <button type="button" class="btn btn-danger col-9 already-have-btn" id="already-have-btn">Already Have An Account</button>
             </div>
         </div>
     </div>
@@ -80,14 +80,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" onclick="window.location.href='./customer.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#customer">Customer</a>
+                        <li class="nav-item" id="customer-in-cus">
+                            <a class="nav-link active text-success" aria-current="page" >Customer</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./store.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#store">Store</a>
+                        <li class="nav-item" id="store-in-cus">
+                            <a class="nav-link active text-success" aria-current="page" >Store</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./order.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#order">Order</a>
+                        <li class="nav-item" id="order-in-cus">
+                            <a class="nav-link active text-success" aria-current="page" >Order</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -169,14 +169,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" onclick="window.location.href='./customer.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#customer">Customer</a>
+                        <li class="nav-item" id="customer-in-store">
+                            <a class="nav-link active text-success" aria-current="page" >Customer</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./store.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#store">Store</a>
+                        <li class="nav-item" id="store-in-store">
+                            <a class="nav-link active text-success" aria-current="page" >Store</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./order.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#order">Order</a>
+                        <li class="nav-item" id="order-in-store">
+                            <a class="nav-link active text-success" aria-current="page" >Order</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -258,14 +258,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" onclick="window.location.href='./customer.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#customer">Customer</a>
+                        <li class="nav-item" id="customer-in-ord">
+                            <a class="nav-link active text-success" aria-current="page" >Customer</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./store.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#store">Store</a>
+                        <li class="nav-item" id="store-in-ord">
+                            <a class="nav-link active text-success" aria-current="page" >Store</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./order.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#order">Order</a>
+                        <li class="nav-item" id="order-in-ord">
+                            <a class="nav-link active text-success" aria-current="page" >Order</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -455,7 +455,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" onclick="window.location.href='./all-orders.html'" class="btn btn-secondary col-md-12 mt-2">All Orders</button>
+                                <button type="button" id="all-orders-btn" class="btn btn-secondary col-md-12 mt-2">All Orders</button>
                             </div>
                         </div>
                     </div>
@@ -486,14 +486,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" onclick="window.location.href='./customer.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#customer">Customer</a>
+                        <li class="nav-item" id="customer-in-allOrd">
+                            <a class="nav-link active text-success" aria-current="page" >Customer</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./store.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#store">Store</a>
+                        <li class="nav-item" id="store-in-allOrd">
+                            <a class="nav-link active text-success" aria-current="page" >Store</a>
                         </li>
-                        <li class="nav-item" onclick="window.location.href='./order.html'">
-                            <a class="nav-link active text-success" aria-current="page" href="#order">Order</a>
+                        <li class="nav-item" id="order-in-allOrd">
+                            <a class="nav-link active text-success" aria-current="page" >Order</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -532,6 +532,153 @@
     </div>
 </div>
 <!--------------------------------------------------------------------------------------------------------------------->
+<script src="./assets/lib/jquary.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#login").css("display","block");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+        $("#customer-window").css("display","none");
+    });
+    $("#login-btn").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#signup-in-login").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","block");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#signup-btn").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#already-have-btn").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","block");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#customer-in-cus").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#customer-in-store").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#customer-in-ord").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#customer-in-allOrd").on('click', () => {
+        $("#customer-window").css("display","block");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#store-in-cus").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","block");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#store-in-store").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","block");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#store-in-ord").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","block");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#store-in-allOrd").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","block");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","none");
+    });
+    $("#order-in-cus").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","block");
+        $("#all-order-window").css("display","none");
+    });
+    $("#order-in-store").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","block");
+        $("#all-order-window").css("display","none");
+    });
+    $("#order-in-ord").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","block");
+        $("#all-order-window").css("display","none");
+    });
+    $("#order-in-allOrd").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","block");
+        $("#all-order-window").css("display","none");
+    });
+    $("#all-orders-btn").on('click', () => {
+        $("#customer-window").css("display","none");
+        $("#login").css("display","none");
+        $("#signup-window").css("display","none");
+        $("#store-window").css("display","none");
+        $("#order-window").css("display","none");
+        $("#all-order-window").css("display","block");
+    });
+</script>
 </body>
 </html>
