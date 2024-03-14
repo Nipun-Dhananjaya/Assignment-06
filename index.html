@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="customer-sal">Salary :</label>
+                        <label for="customer-sal">Contact :</label>
                         <input type="text" class="form-control border border-danger" id="customer-sal" placeholder="" class="input">
                     </div>
                 </div>
@@ -133,14 +133,14 @@
                 <div class="col-md-6">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control border border-danger" id="customer-search" placeholder="" class="input">
-                        <button class="btn btn-outline-success ms-3" type="submit">Search</button>
+                        <button class="btn btn-outline-success ms-3" type="submit" id="customer-search-btn">Search</button>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group button-set">
-                        <button type="button" class="btn btn-primary col-3">Save</button>
-                        <button type="button" class="btn btn-success col-3">Update</button>
-                        <button type="button" class="btn btn-danger col-3">Delete</button>
+                        <button id="c-save-btn" type="button" class="btn btn-primary col-3">Save</button>
+                        <button id="c-update-btn" type="button" class="btn btn-success col-3">Update</button>
+                        <button id="c-delete-btn" type="button" class="btn btn-danger col-3">Delete</button>
                     </div>
                 </div>
             </div>
@@ -151,10 +151,10 @@
                 <th scope="col">Name</th>
                 <th scope="col">NIC</th>
                 <th scope="col">Address</th>
-                <th scope="col">Salary</th>
+                <th scope="col">Contact</th>
             </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="customer-t-body"></tbody>
         </table>
     </div>
 </div>
@@ -222,14 +222,14 @@
                 <div class="col-md-6">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control border border-danger" id="store-search" placeholder="" class="input">
-                        <button class="btn btn-outline-success ms-3" type="submit">Search</button>
+                        <button class="btn btn-outline-success ms-3" type="submit" id="store-search-btn" >Search</button>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group button-set">
-                        <button type="button" class="btn btn-primary col-3">Save</button>
-                        <button type="button" class="btn btn-success col-3">Update</button>
-                        <button type="button" class="btn btn-danger col-3">Delete</button>
+                        <button id="itm-save" type="button" class="btn btn-primary col-3">Save</button>
+                        <button id="itm-update" type="button" class="btn btn-success col-3">Update</button>
+                        <button id="itm-delete" type="button" class="btn btn-danger col-3">Delete</button>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
                 <th scope="col">Price</th>
             </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="itm-tbl-body"></tbody>
         </table>
     </div>
 </div>
@@ -304,6 +304,9 @@
                                         <button id="cust-id" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Click Here To Select
                                         </button>
+                                        <ul id="dropdown-menu-cusID" class="dropdown-menu col-md-12 " aria-labelledby="item-code">
+                                            <!-- Options will be dynamically added here -->
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -335,11 +338,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="itm-code">Item Code :</label>
+                                    <label for="item-code">Item Code :</label>
                                     <div class="dropdown">
                                         <button id="item-code" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Click Here To Select
                                         </button>
+                                        <ul id="dropdown-menu-itmId" class="dropdown-menu col-md-12 " aria-labelledby="item-code">
+                                            <!-- Options will be dynamically added here -->
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +359,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="itm-price">Price :</label>
+                                    <label for="item-price">Price :</label>
                                     <input type="text" class="form-control border border-danger" id="item-price" placeholder="" class="input">
                                 </div>
                             </div>
@@ -367,13 +373,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="itm-qty">Quantity :</label>
+                                    <label for="item-qty">Quantity :</label>
                                     <input type="text" class="form-control border border-danger" id="item-qty" placeholder="" class="input">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-danger col-md-12 mt-4">Add Item</button>
+                                    <button id="add-itm-btn" type="button" class="btn btn-danger col-md-12 mt-4">Add Item</button>
                                 </div>
                             </div>
                         </div>
@@ -386,32 +392,28 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="itm-qty">Cash :</label>
-                                    <input type="text" class="form-control border border-danger" id="cash" placeholder="" class="input">
+                                    <label for="discount">Discount :</label>
+                                    <input type="text" class="form-control border border-danger" id="discount" placeholder="" class="input">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <p class="h2 mt-3">Total :</p>
-                                    <p class="h2 mt-3 text-primary-emphasis">0.00 /=</p>
+                                    <p id="tot" class="h2 mt-3 text-primary-emphasis">0.00 /=</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="discount">Discount :</label>
-                                    <div class="dropdown">
-                                        <button id="discount" class="btn dropdown-toggle border border-danger col-md-12 bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Click Here To Select
-                                        </button>
-                                    </div>
+                                    <label for="cash">Cash :</label>
+                                    <input type="text" class="form-control border border-danger" id="cash" placeholder="" class="input">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <p class="h2 mt-3">Subtotal :</p>
-                                    <p class="h2 mt-3 text-danger">0.00 /=</p>
+                                    <p id="subtot" class="h2 mt-3 text-danger">0.00 /=</p>
                                 </div>
                             </div>
                         </div>
@@ -422,11 +424,11 @@
                                     <input type="text" class="form-control border border-danger" id="balance" placeholder="" class="input">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <!--<div class="col-md-6">
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-success col-md-12 mt-4">Purchase</button>
+                                    <button id="purchase" type="button" class="btn btn-success col-md-12 mt-4">Purchase</button>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -434,21 +436,21 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" class="btn btn-primary col-md-12 mt-2">Save</button>
+                                <button id="purchase" type="button" class="btn btn-primary col-md-12 mt-2">Save</button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" class="btn btn-success col-md-12 mt-2">Update</button>
+                                <button id="update-ord" type="button" class="btn btn-success col-md-12 mt-2">Update</button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <button type="button" class="btn btn-danger col-md-12 mt-2">Delete</button>
+                                <button id="delete-ord" type="button" class="btn btn-danger col-md-12 mt-2">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -467,11 +469,11 @@
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Code</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
+                <th scope="col">Quantity to Buy</th>
+                <th scope="col">Whole Price</th>
             </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="order-item-table-body"></tbody>
         </table>
     </div>
 </div>
@@ -511,7 +513,7 @@
                 <div class="col-md-6">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control border border-danger" id="all-order-search" placeholder="" class="input">
-                        <button class="btn btn-outline-success ms-3" type="submit">Search</button>
+                        <button class="btn btn-outline-success ms-3" type="submit" id="ord-search-btn">Search</button>
                     </div>
                 </div>
             </div>
@@ -527,13 +529,20 @@
                 <th scope="col">Name</th>
             </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="all-order-tbl"></tbody>
         </table>
     </div>
 </div>
 <!--------------------------------------------------------------------------------------------------------------------->
 <script src="./assets/lib/jquary.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module" src="./controller/customer_controller.js"></script>
+<script type="module" src="./controller/store_controller.js"></script>
+<script type="module" src="./controller/order_controller.js"></script>
+<script type="module" src="./controller/user_controller.js"></script>
+
 <script>
     $(document).ready(function () {
         $("#login").css("display","block");
@@ -543,26 +552,10 @@
         $("#all-order-window").css("display","none");
         $("#customer-window").css("display","none");
     });
-    $("#login-btn").on('click', () => {
-        $("#customer-window").css("display","block");
-        $("#login").css("display","none");
-        $("#signup-window").css("display","none");
-        $("#store-window").css("display","none");
-        $("#order-window").css("display","none");
-        $("#all-order-window").css("display","none");
-    });
     $("#signup-in-login").on('click', () => {
         $("#customer-window").css("display","none");
         $("#login").css("display","none");
         $("#signup-window").css("display","block");
-        $("#store-window").css("display","none");
-        $("#order-window").css("display","none");
-        $("#all-order-window").css("display","none");
-    });
-    $("#signup-btn").on('click', () => {
-        $("#customer-window").css("display","block");
-        $("#login").css("display","none");
-        $("#signup-window").css("display","none");
         $("#store-window").css("display","none");
         $("#order-window").css("display","none");
         $("#all-order-window").css("display","none");
