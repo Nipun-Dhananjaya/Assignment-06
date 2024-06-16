@@ -148,9 +148,6 @@ $("#c-update-btn").on('click', () => {
 });
 
 // delete customer
-$("#c-crudButtons>button[type='button']").eq(2).on('click', () => {
-
-});
 
 $("#c-delete-btn").on('click', () => {
     customer_db.splice(customer_db.findIndex(item => item.nic === cus_nic), 1);
